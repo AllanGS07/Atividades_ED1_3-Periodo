@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package atividade_casa;
 
 import java.util.Random;
 

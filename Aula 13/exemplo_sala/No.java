@@ -1,4 +1,4 @@
-package homer;
+package exemplo_sala;
 
 public class No {
     String valor;

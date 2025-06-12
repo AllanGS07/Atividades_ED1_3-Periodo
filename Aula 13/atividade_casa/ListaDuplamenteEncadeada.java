@@ -1,4 +1,4 @@
-package numeros_aleatorios;
+package atividade_casa;
 
 public class ListaDuplamenteEncadeada {
     private No inicio;
@@ -23,9 +23,9 @@ public class ListaDuplamenteEncadeada {
             i++;
         }
 
-        if (atual == null && i == posicao) { // Insere no fim se a posição for o final exato
+        if (atual == null && i == posicao) {
             inserirNoFim(valor);
-        } else if (atual != null) { // Insere no meio
+        } else if (atual != null) {
             No novoNo = new No(valor);
             novoNo.proximo = atual;
             novoNo.anterior = atual.anterior;
@@ -38,23 +38,20 @@ public class ListaDuplamenteEncadeada {
         No atual = inicio;
         while (atual != null) {
             if (atual.valor == valor) {
-                // Se é o primeiro nó
                 if (atual == inicio) {
                     inicio = atual.proximo;
                     if (inicio != null) inicio.anterior = null;
-                    else fim = null; // A lista ficou vazia
+                    else fim = null;
                 }
-                // Se é o último nó
                 else if (atual == fim) {
                     fim = atual.anterior;
                     fim.proximo = null;
                 }
-                // Se está no meio
                 else {
                     atual.anterior.proximo = atual.proximo;
                     atual.proximo.anterior = atual.anterior;
                 }
-                return; // Remove apenas a primeira ocorrência e sai
+                return;
             }
             atual = atual.proximo;
         }

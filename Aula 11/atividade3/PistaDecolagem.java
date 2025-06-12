@@ -1,4 +1,4 @@
-package aeroporto3;
+package atividade3;
 
 import java.util.LinkedList;
 import java.util.Queue;

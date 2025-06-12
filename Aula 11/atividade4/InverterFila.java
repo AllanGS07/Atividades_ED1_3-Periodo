@@ -1,4 +1,4 @@
-package filanumeros4;
+package atividade4;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -30,10 +30,9 @@ public class InverterFila {
         for (int i = 0; i < 100; i++) {
             filaF1.add(random.nextInt(1000));
         }
-
         System.out.println("Fila Original (F1): " + filaF1);
-        Queue<Integer> filaF2 = inverter(filaF1);
 
+        Queue<Integer> filaF2 = inverter(filaF1);
         System.out.println("\nFila Invertida (F2): " + filaF2);
     }
 }

@@ -1,4 +1,4 @@
-package sequencia1;
+package atividade1;
 import java.util.Scanner;
 import java.util.Stack;
 

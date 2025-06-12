@@ -1,4 +1,4 @@
-package aeroporto3;
+package atividade3;
 
 public class Aviao {
     private String nome;

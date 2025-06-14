@@ -1,4 +1,4 @@
-package atividade_casa;
+package numeros_aleatorios;
 
 public class No {
     int valor;

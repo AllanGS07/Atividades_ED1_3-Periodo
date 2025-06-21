@@ -11,7 +11,7 @@ public class Deque {
         return inicio == null;
     }
 
-    public void inserirInicio(Documento documento) { // Alterado para receber Documento
+    public void inserirInicio(Documento documento) {
         No novoNo = new No(documento);
         if (estaVazio()) {
             inicio = novoNo;
@@ -23,7 +23,7 @@ public class Deque {
         }
     }
 
-    public void inserirFim(Documento documento) { // Alterado para receber Documento
+    public void inserirFim(Documento documento) {
         No novoNo = new No(documento);
         if (estaVazio()) {
             inicio = novoNo;
@@ -35,7 +35,7 @@ public class Deque {
         }
     }
 
-    public Documento removerInicio() { // Alterado para retornar Documento
+    public Documento removerInicio() {
         if (estaVazio()) {
             System.out.println("Deque vazio!");
             return null;
@@ -45,12 +45,12 @@ public class Deque {
         if (inicio != null) {
             inicio.anterior = null;
         } else {
-            fim = null; // O deque ficou vazio
+            fim = null;
         }
         return noRemovido.documento;
     }
 
-    public Documento removerFim() { // Alterado para retornar Documento
+    public Documento removerFim() {
         if (estaVazio()) {
             System.out.println("Deque vazio!");
             return null;
@@ -60,7 +60,7 @@ public class Deque {
         if (fim != null) {
             fim.proximo = null;
         } else {
-            inicio = null; // O deque ficou vazio
+            inicio = null;
         }
         return noRemovido.documento;
     }

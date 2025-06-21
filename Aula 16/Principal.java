@@ -2,7 +2,7 @@ public class Principal{
     public static void main(String[] args) {
         SistemaImpressao impressora = new SistemaImpressao();
 
-        System.out.println("### Iniciando Sistema de Impressão ###");
+        System.out.println("Iniciando Sistema de Impressão");
         impressora.fila_vazia();
         System.out.println();
 
@@ -20,15 +20,14 @@ public class Principal{
         impressora.total_paginas();
         System.out.println();
 
-
         // Processando documentos
-        System.out.println("### Processando Documentos ###");
-        impressora.processar_proximo(); // Processa o último urgente adicionado
-        impressora.processar_ultimo();   // Processa o último normal adicionado
+        System.out.println("Processando Documentos");
+        impressora.processar_proximo();
+        impressora.processar_ultimo();
         System.out.println();
 
         // Visualizando a fila final
-        System.out.println("### Estado Final da Fila ###");
+        System.out.println("Estado Final da Fila");
         impressora.visualizar_fila();
         impressora.total_documentos();
         impressora.total_paginas();

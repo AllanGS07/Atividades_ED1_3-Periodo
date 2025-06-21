@@ -1,9 +1,9 @@
 public class No {
-    Documento documento; // Alterado de valor para documento
+    Documento documento;
     No proximo;
     No anterior;
 
-    public No(Documento documento) { // Alterado o parâmetro do construtor
+    public No(Documento documento) {
         this.documento = documento;
         this.proximo = null;
         this.anterior = null;
